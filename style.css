@@ -28,7 +28,7 @@ nav div span{
 } 
 
 section{
-    width: 100%;
+    width: 60%;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -51,8 +51,43 @@ marquee{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     color:black;
+    font-weight: bolder;
 }
 
 .aparecerMenu{
     transform: translateX(0);
 }
+
+nav #desktop {
+    display: none;
+    
+}
+nav #desktop a {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+    text-decoration: none;
+}
+ 
+@media(min-width:728px){
+    nav #mobile{
+        display:none;
+    }
+    nav #desktop{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+    }
+}
+
+/* @media(max-width:425px){
+    nav #desktop{
+        display:none;
+    }
+    nav #mobile{
+        display: flex;
+
+    }
+} */

@@ -1,8 +1,8 @@
-let hamburguer = document.querySelector("#hamburguer");
+let hamburguer = document.querySelector("#mobile");
 let menu = document.querySelector("section");
 
 function controlarMenu(){
     menu.classList.toggle("aparecerMenu");
 }
 
-hamburguer.onclick = controlarMenu;
+mobile.onclick = controlarMenu;
